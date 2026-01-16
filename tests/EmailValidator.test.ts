@@ -41,6 +41,19 @@ describe("emailValidator", ()=> {
         
     })
 
+    describe("Email witouth word after @  ", ()=> {
+        it("Should return false when  Email witouth word after @  ",()=> {
+            let actual = emailValidator.emailValid("test@");
+
+            expect(actual).toBe(false);
+        })
+
+        
+    })
+
+    
+    
+
 
     
 })

@@ -12,8 +12,8 @@ export class EmailValidator{
      }
 
      const beforeAt = email.substring(0, atIndex);
-
-     if (beforeAt.length === 0 ) {
+    const afterAt = email.substring(atIndex + 1);
+     if (beforeAt.length === 0 ||afterAt.length === 0 ) {
     return false;
   }
         return true;
