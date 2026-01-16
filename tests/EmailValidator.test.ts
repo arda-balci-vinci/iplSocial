@@ -20,5 +20,15 @@ describe("emailValidator", ()=> {
         })
     })
 
+
+     describe("Email with space  ", ()=> {
+        it("Should return false with space  ",()=> {
+            let actual = emailValidator.emailValid("test @example.com");
+
+            expect(actual).toBe(false);
+        })
+    })
+
+
     
 })
