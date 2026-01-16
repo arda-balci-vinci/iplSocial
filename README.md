@@ -8,7 +8,8 @@
 ## URL GitHub du projet
 https://github.com/arda-balci-vinci/iplSocial.git
 
-## Description du projet
+## Project Description
+Implementation of a CI pipeline via GitHub Actions and TDD development of an email validation function using TypeScript.
 
 
 
