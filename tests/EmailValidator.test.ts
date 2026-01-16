@@ -12,5 +12,13 @@ describe("emailValidator", ()=> {
         })
     })
 
+    describe("Email without @ ", ()=> {
+        it("Should return false without @ ",()=> {
+            let actual = emailValidator.emailValid("testexample.com");
+
+            expect(actual).toBe(false);
+        })
+    })
+
     
 })

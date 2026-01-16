@@ -5,7 +5,16 @@ export class EmailValidator{
         if(email.includes(" ")) {
             return false;
         }
+
+     const atIndex = email.indexOf("@");
+        if (atIndex === -1) {
+     return false;
+     }
+
+
         return true;
+
+
     }
 
 }
