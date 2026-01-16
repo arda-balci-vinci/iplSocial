@@ -16,6 +16,11 @@ export class EmailValidator{
      if (beforeAt.length === 0 ||afterAt.length === 0 ) {
     return false;
   }
+
+  const dotIndex = afterAt.indexOf(".");
+  if (dotIndex === -1 || dotIndex === afterAt.length - 1) {
+    return false;
+  }
         return true;
 
 

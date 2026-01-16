@@ -51,7 +51,15 @@ describe("emailValidator", ()=> {
         
     })
 
-    
+     describe("Email with . ", ()=> {
+        it("Should return false when .  ",()=> {
+            let actual = emailValidator.emailValid("test@example.");
+
+            expect(actual).toBe(false);
+        })
+
+        
+    })
     
 
 
